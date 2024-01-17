@@ -38,15 +38,7 @@ function HomePage() {
         </Box>
       </Box>
       <Box component={"section"} id="video-selector" minHeight={"20vh"}>
-        <Box
-          minHeight={"20vh"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignContent={"center"}
-          alignItems={"center"}
-        >
-          <VideoSelector />
-        </Box>
+        <VideoSelector />
       </Box>
     </Box>
   );

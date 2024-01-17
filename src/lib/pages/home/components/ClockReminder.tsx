@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
 
 interface RoundedTimerProps {
   time: number;
@@ -32,6 +33,39 @@ const RoundedTimer = ({ title, time }: RoundedTimerProps) => {
 };
 
 function Clock() {
+  const [seconds, setSeconds] = useState(10);
+  const [minutes, setMinutes] = useState(3);
+  const [hours, setHours] = useState(0);
+  const [days, setDays] = useState(0);
+
+  useEffect(() => {
+    const target = new Date("12/31/2024 0:0:0");
+
+    const interval = setInterval(() => {
+      const today = new Date();
+
+      const difference = target.getTime() - today.getTime();
+
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      setDays(d);
+
+      const h = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      setHours(h);
+
+      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      setMinutes(m);
+
+      const s = Math.floor((difference % (1000 * 60)) / 1000);
+      setSeconds(s);
+
+      setDays(d);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <Container sx={{ mb: 3, pt: 3 }}>
@@ -47,16 +81,16 @@ function Clock() {
         </Typography>
         <Grid container justifyContent={"center"} columnSpacing={2}>
           <Grid item xs={3} sm={2} md={1}>
-            <RoundedTimer time={0} title="días" />
+            <RoundedTimer time={days} title="días" />
           </Grid>
           <Grid item xs={3} sm={2} md={1}>
-            <RoundedTimer time={0} title="HRS" />
+            <RoundedTimer time={hours} title="HRS" />
           </Grid>
           <Grid item xs={3} sm={2} md={1}>
-            <RoundedTimer time={0} title="MIN." />
+            <RoundedTimer time={minutes} title="MIN." />
           </Grid>
           <Grid item xs={3} sm={2} md={1}>
-            <RoundedTimer time={0} title="seg" />
+            <RoundedTimer time={seconds} title="seg" />
           </Grid>
         </Grid>
       </Container>

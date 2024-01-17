@@ -10,8 +10,10 @@ function VideoComponent() {
           <Box width={"100%"}>
             <iframe
               src={`https://www.youtube.com/embed/${video.videoSrc}?rel=0&showinfo=0&autoplay=1`}
-              style={{ width: "100%", height: "45vh" }}
-            />
+              style={{ width: "100%", height: "45vh", border: "0px" }}
+            >
+              Browser not compatible.
+            </iframe>
           </Box>
         </Grid>
       </Grid>

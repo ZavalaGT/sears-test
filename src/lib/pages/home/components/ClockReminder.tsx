@@ -77,7 +77,7 @@ function Clock() {
           color={"white"}
           mb={3}
         >
-          Faltan
+          FALTAN
         </Typography>
         <Grid container justifyContent={"center"} columnSpacing={2}>
           <Grid item xs={3} sm={2} md={1}>

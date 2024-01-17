@@ -39,7 +39,7 @@ function VideoSelector() {
               title="Travel meets fashon"
               imageSrc="/src/assets/images/travel-meets-fashion.png"
               videoSrc="GAcq61I9IVM"
-              descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
+              descriptionText="Un texto diferente para saber que funciona"
             />
           </Grid>
           <Grid item xs={6} md={2}>
@@ -47,7 +47,7 @@ function VideoSelector() {
               title="velocidad y riesgo"
               imageSrc="/src/assets/images/velocidad-riesgo.png"
               videoSrc="nKPbfIU442g"
-              descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
+              descriptionText="estes es otro tipo de texto editable"
             />
           </Grid>
           <Grid item xs={6} md={2}>
@@ -55,7 +55,7 @@ function VideoSelector() {
               title="experiencia multimedia"
               imageSrc="/src/assets/images/experiencia.png"
               videoSrc="5Zg_5DqumB8"
-              descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
+              descriptionText="Un video más con su descripción diferente"
             />
           </Grid>
         </Grid>

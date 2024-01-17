@@ -5,6 +5,10 @@ const defaultTheme = createTheme({
   palette: {
     ...projectColors,
   },
+});
+
+let theme = createTheme({
+  palette: { ...defaultTheme.palette },
   typography: {
     fontFamily: [
       "Exo",
@@ -15,10 +19,6 @@ const defaultTheme = createTheme({
       '"Segoe UI Symbol"',
     ].join(","),
   },
-});
-
-let theme = createTheme({
-  palette: { ...defaultTheme.palette },
 });
 
 theme = responsiveFontSizes(theme);

@@ -6,7 +6,18 @@ import VideoSelector from "./components/VideoSelector";
 function HomePage() {
   return (
     <Box>
-      <Box component={"section"} id="reminder-time" minHeight={"65vh"}>
+      <Box
+        component={"section"}
+        id="reminder-time"
+        minHeight={"70vh"}
+        sx={{
+          backgroundColor: "red",
+          backgroundImage: "url(src/assets/images/background.jpg)",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Box
           minHeight={"15vh"}
           display={"flex"}

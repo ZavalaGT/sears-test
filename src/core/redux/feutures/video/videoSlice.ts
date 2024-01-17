@@ -4,7 +4,7 @@ type VideoTypes = {
   videoSrc: string;
 };
 const initialState: VideoTypes = {
-  videoSrc: "false",
+  videoSrc: "2uZjsHFob5s",
 };
 
 const VideoSlice = createSlice({

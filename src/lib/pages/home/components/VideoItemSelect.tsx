@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import projectColors from "../../../../core/theme/projectColors";
+import { useAppDispatch } from "../../../../core/redux/store";
+import { setVideo } from "../../../../core/redux/feutures/video/videoSlice";
 
 interface VideoItemSelectProps {
   imageSrc: string;
@@ -15,9 +17,11 @@ function VideoItemSelect({
   videoSrc,
   descriptionText,
 }: VideoItemSelectProps) {
+  const dispatch = useAppDispatch();
   const [isHover, setHover] = useState(false);
   const handleClick = () => {
     console.log({ videoSrc, descriptionText });
+    dispatch(setVideo(videoSrc));
   };
 
   const handleHover = () => {

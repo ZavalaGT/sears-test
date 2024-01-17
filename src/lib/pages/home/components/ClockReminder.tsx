@@ -34,7 +34,7 @@ const RoundedTimer = ({ title, time }: RoundedTimerProps) => {
 function Clock() {
   return (
     <>
-      <Container sx={{ py: 3 }}>
+      <Container sx={{ mb: 3, pt: 3 }}>
         <Typography
           component={"h1"}
           variant="h4"

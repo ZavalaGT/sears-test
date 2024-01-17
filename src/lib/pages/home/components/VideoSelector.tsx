@@ -30,7 +30,7 @@ function VideoSelector() {
             <VideoItemSelect
               title="Team latam"
               imageSrc="/src/assets/images/team-latam.png"
-              videoSrc=""
+              videoSrc="2uZjsHFob5s"
               descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
             />
           </Grid>
@@ -38,7 +38,7 @@ function VideoSelector() {
             <VideoItemSelect
               title="Travel meets fashon"
               imageSrc="/src/assets/images/travel-meets-fashion.png"
-              videoSrc=""
+              videoSrc="GAcq61I9IVM"
               descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
             />
           </Grid>
@@ -46,7 +46,7 @@ function VideoSelector() {
             <VideoItemSelect
               title="velocidad y riesgo"
               imageSrc="/src/assets/images/velocidad-riesgo.png"
-              videoSrc=""
+              videoSrc="nKPbfIU442g"
               descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
             />
           </Grid>
@@ -54,7 +54,7 @@ function VideoSelector() {
             <VideoItemSelect
               title="experiencia multimedia"
               imageSrc="/src/assets/images/experiencia.png"
-              videoSrc=""
+              videoSrc="5Zg_5DqumB8"
               descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
             />
           </Grid>

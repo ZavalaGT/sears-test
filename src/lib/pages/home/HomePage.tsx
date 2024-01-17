@@ -18,24 +18,8 @@ function HomePage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <Box
-          minHeight={"15vh"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignContent={"center"}
-          alignItems={"center"}
-        >
-          <Clock />
-        </Box>
-        <Box
-          minHeight={"50vh"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignContent={"center"}
-          alignItems={"center"}
-        >
-          <VideoComponent />
-        </Box>
+        <Clock />
+        <VideoComponent />
       </Box>
       <Box component={"section"} id="video-selector" minHeight={"20vh"}>
         <VideoSelector />

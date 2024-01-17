@@ -10,7 +10,7 @@ const RoundedTimer = ({ title, time }: RoundedTimerProps) => {
     <>
       <Box
         width={"100"}
-        border={"2px solid black"}
+        border={"2px solid white"}
         borderRadius={"50%"}
         sx={{ aspectRatio: "1/1" }}
         display={"flex"}
@@ -18,11 +18,11 @@ const RoundedTimer = ({ title, time }: RoundedTimerProps) => {
         alignItems={"center"}
       >
         <Box>
-          <Typography fontWeight={"bold"} textAlign={"center"}>
+          <Typography fontWeight={"bold"} textAlign={"center"} color={"white"}>
             {time < 10 ? "0" : ""}
             {time}
           </Typography>
-          <Typography fontWeight={"bold"} textAlign={"center"}>
+          <Typography fontWeight={"bold"} textAlign={"center"} color={"white"}>
             {title.toUpperCase()}
           </Typography>
         </Box>
@@ -34,13 +34,14 @@ const RoundedTimer = ({ title, time }: RoundedTimerProps) => {
 function Clock() {
   return (
     <>
-      <Container>
+      <Container sx={{ py: 3 }}>
         <Typography
           component={"h1"}
           variant="h4"
           textAlign={"center"}
           fontWeight={"bold"}
           color={"white"}
+          mb={3}
         >
           Faltan
         </Typography>

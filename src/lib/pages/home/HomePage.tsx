@@ -13,7 +13,7 @@ function HomePage() {
         sx={{
           backgroundColor: "red",
           backgroundImage: "url(src/assets/images/background.jpg)",
-          backgroundPosition: "center center",
+          backgroundPosition: "top center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}

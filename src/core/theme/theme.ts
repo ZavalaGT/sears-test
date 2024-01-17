@@ -5,6 +5,16 @@ const defaultTheme = createTheme({
   palette: {
     ...projectColors,
   },
+  typography: {
+    fontFamily: [
+      "Exo",
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+  },
 });
 
 let theme = createTheme({

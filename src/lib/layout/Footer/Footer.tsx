@@ -15,7 +15,7 @@ function Footer() {
     >
       <Container sx={{ py: 1 }}>
         <Grid container>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box
               height={"100%"}
               display={"flex"}
@@ -32,7 +32,7 @@ function Footer() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box display={"flex"} justifyContent={"center"}>
               <a href="#">
                 <img
@@ -44,7 +44,7 @@ function Footer() {
               </a>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box
               height={"100%"}
               width={"100%"}
@@ -65,7 +65,7 @@ function Footer() {
                     justifyContent={{ xs: "center", md: "end" }}
                     spacing={1}
                   >
-                    <Grid item>
+                    <Grid>
                       <Box
                         bgcolor={"#6AAAF2"}
                         display={"flex"}
@@ -87,7 +87,7 @@ function Footer() {
                         />
                       </Box>
                     </Grid>
-                    <Grid item>
+                    <Grid>
                       <Box
                         bgcolor={"#57ABF4"}
                         display={"flex"}
@@ -103,7 +103,7 @@ function Footer() {
                         <TwitterIcon style={{ color: "white" }} />
                       </Box>
                     </Grid>
-                    <Grid item>
+                    <Grid>
                       <Box
                         bgcolor={"#3A599C"}
                         display={"flex"}
@@ -119,7 +119,7 @@ function Footer() {
                         <FacebookIcon style={{ color: "white" }} />
                       </Box>
                     </Grid>
-                    <Grid item>
+                    <Grid>
                       <Box
                         bgcolor={"#A22A1F"}
                         display={"flex"}

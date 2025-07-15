@@ -26,7 +26,7 @@ function VideoSelector() {
           columnSpacing={3}
           justifyContent={"center"}
         >
-          <Grid item xs={6} md={2}>
+          <Grid size={{ xs: 6, md: 2 }}>
             <VideoItemSelect
               title="Team latam"
               imageSrc="/src/assets/images/team-latam.png"
@@ -34,7 +34,7 @@ function VideoSelector() {
               descriptionText="Los Deporttistas latinoamericanos que participan en sochi 2014"
             />
           </Grid>
-          <Grid item xs={6} md={2}>
+          <Grid size={{ xs: 6, md: 2 }}>
             <VideoItemSelect
               title="Travel meets fashon"
               imageSrc="/src/assets/images/travel-meets-fashion.png"
@@ -42,7 +42,7 @@ function VideoSelector() {
               descriptionText="Un texto diferente para saber que funciona"
             />
           </Grid>
-          <Grid item xs={6} md={2}>
+          <Grid size={{ xs: 6, md: 2 }}>
             <VideoItemSelect
               title="velocidad y riesgo"
               imageSrc="/src/assets/images/velocidad-riesgo.png"
@@ -50,7 +50,7 @@ function VideoSelector() {
               descriptionText="estes es otro tipo de texto editable"
             />
           </Grid>
-          <Grid item xs={6} md={2}>
+          <Grid size={{ xs: 6, md: 2 }}>
             <VideoItemSelect
               title="experiencia multimedia"
               imageSrc="/src/assets/images/experiencia.png"

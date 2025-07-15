@@ -80,16 +80,16 @@ function Clock() {
           FALTAN
         </Typography>
         <Grid container justifyContent={"center"} columnSpacing={2}>
-          <Grid item xs={3} sm={2} md={1}>
+          <Grid size={{ xs: 3, sm: 2, md: 1 }}>
             <RoundedTimer time={days} title="días" />
           </Grid>
-          <Grid item xs={3} sm={2} md={1}>
+          <Grid size={{ xs: 3, sm: 2, md: 1 }}>
             <RoundedTimer time={hours} title="HRS" />
           </Grid>
-          <Grid item xs={3} sm={2} md={1}>
+          <Grid size={{ xs: 3, sm: 2, md: 1 }}>
             <RoundedTimer time={minutes} title="MIN." />
           </Grid>
-          <Grid item xs={3} sm={2} md={1}>
+          <Grid size={{ xs: 3, sm: 2, md: 1 }}>
             <RoundedTimer time={seconds} title="seg" />
           </Grid>
         </Grid>
